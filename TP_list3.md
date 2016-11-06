@@ -1,6 +1,6 @@
 Technologia programowania
 
-List II
+List III
 
 1)
 
@@ -98,3 +98,18 @@ and private String code = DEFAULT_DOOR_CODE;
 - create FormatDirector
 
 look -> source code
+
+
+4)
+
+- create WordCensor
+
+- create WordCensorTest
+
+- create ChainCensorDecoratorTest similar like SocialChannelDecortatorIntegrationTest
+
+- in SocialChannelBuilder create
+public SocialChannelBuilder andWith(WordCensor channel) {
+		return with(channel);
+	}
+(necessary for ChainCensorDecoratorTest)

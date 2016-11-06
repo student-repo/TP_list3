@@ -21,6 +21,7 @@ import java.util.Stack;
 
 import eu.jpereira.trainings.designpatterns.structural.decorator.channel.decorator.MessageTruncator;
 import eu.jpereira.trainings.designpatterns.structural.decorator.channel.decorator.SocialChannelDecorator;
+import eu.jpereira.trainings.designpatterns.structural.decorator.channel.decorator.WordCensor;
 
 /**
  * @author jpereira
@@ -159,6 +160,9 @@ public abstract class SocialChannelBuilder {
 	 * @return
 	 */
 	public SocialChannelBuilder andWith(MessageTruncator channel) {
+		return with(channel);
+	}
+	public SocialChannelBuilder andWith(WordCensor channel) {
 		return with(channel);
 	}
 
