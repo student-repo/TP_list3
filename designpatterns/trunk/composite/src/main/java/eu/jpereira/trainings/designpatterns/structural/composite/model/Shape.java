@@ -25,6 +25,10 @@ public abstract class Shape {
 	private int x;
 	private int y;
 
+	public Shape(){
+		this.x = 0;
+		this.y = 0;
+	}
 	/**
 	 * If this object is a CompositeShape, return it. Null otherwise.
 	 * 
@@ -33,7 +37,8 @@ public abstract class Shape {
 	 */
 	public CompositeShape asComposite() {
 		//TODO: Implement
-		return null;
+		if(this instanceof CompositeShape) return (CompositeShape) this;
+		else return null;
 	}
 
 	/**
@@ -49,6 +54,13 @@ public abstract class Shape {
 		this.y += yIncrement;
 		// if is composite, delegate to children
 		//TODO: COmplete
+		if(this instanceof CompositeShape){
+			CompositeShape a = (CompositeShape)this;
+			for(Shape s : a.shapes){
+				s.move(xIncrement, yIncrement);
+			}
+
+		}
 	}
 
 	/**

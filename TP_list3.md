@@ -113,3 +113,70 @@ public SocialChannelBuilder andWith(WordCensor channel) {
 		return with(channel);
 	}
 (necessary for ChainCensorDecoratorTest)
+
+5)
+
+- in class Shape inside asComposite
+
+	if(this instanceof CompositeShape) return (CompositeShape) this;
+		 else return null;
+
+- in CompositeShape
+
+inside addShape shapes.add(shape);
+
+inside createShapesList return new ArrayList<Shape>();
+
+inside getShapeCount return shapes.size();
+
+---------------------
+ FIRST TEST PASSED
+--------------------
+ - in CompositeShape
+
+ inside getShapesByType
+
+ List<Shape> rectangleShapes = new ArrayList<Shape>();
+		for(Shape s : shapes){
+			if(s instanceof Rectangle) rectangleShapes.add(s);
+		}
+		return rectangleShapes;
+---------------------
+SECOUND TEST PASSED
+---------------------		
+- in CompositeShape
+
+	inside removeShape return shapes.remove(shape);
+
+	-------------------
+	THIRD TEST PASSED
+	-------------------
+
+	-in Shape
+
+		inside move
+
+		if(this instanceof CompositeShape){
+			CompositeShape a = (CompositeShape)this;
+			for(Shape s : a.shapes){
+				s.move(xIncrement, yIncrement);
+			}
+
+		}
+
+		-----------------
+		FOURTH TEST PASSED
+		-----------------
+
+		in CompositeShape
+
+		inside getLeafShapes return shapes;
+
+		-----------------
+		FIFTH TEST PASSED
+		-----------------
+- sixth test is for free
+
+		-----------------
+		SIXTH TEST PASSED
+		-----------------

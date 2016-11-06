@@ -30,5 +30,13 @@ public class Circle extends CompositeShape {
 	public ShapeType getType() {
 		return ShapeType.CIRCLE;
 	}
+	public static void main(String[] args){
+		Circle a = new Circle();
+//		a.asComposite();
+
+		Shape line = new Line();
+		a.asComposite().addShape(line);
+		System.out.println(a.getShapeCount());
+	}
 
 }
