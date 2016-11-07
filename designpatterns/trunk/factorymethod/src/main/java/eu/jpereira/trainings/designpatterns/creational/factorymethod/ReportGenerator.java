@@ -22,29 +22,55 @@ package eu.jpereira.trainings.designpatterns.creational.factorymethod;
  */
 public class ReportGenerator {
 
+	public enum ReportType {
+		JSON, XML, HTML, PDF
+	}
 	/**
 	 * Generate a new report.
 	 * @param data The report data
 	 * @param type the type of report
 	 * @return the generated report, or null of type is unknown
 	 */
-	public Report generateReport(ReportData data, String type) {
 
-		Report generatedReport = null;
+	public static Report generateReport(ReportData data, ReportType reportType) {
+		Report generatedReport;
 
-		if (type.equals("JSON")) {
-			generatedReport = new JSONReport();
-		} else if (type.equals("XML")) {
-			generatedReport = new XMLReport();
-		} else if (type.equals("HTML")) {
-			generatedReport = new HTMLReport();
-		} else if (type.equals("PDF")) {
-			generatedReport = new PDFReport();
+		switch (reportType) {
+			case JSON:
+				generatedReport = new JSONReport();
+				break;
+			case XML:
+				generatedReport = new XMLReport();
+				break;
+			case HTML:
+				generatedReport = new HTMLReport();
+				break;
+			case PDF:
+				generatedReport = new PDFReport();
+				break;
+			default: generatedReport = null;
 		}
-		if (generatedReport != null) {
 			generatedReport.generateReport(data);
-		}
-
 		return generatedReport;
 	}
+
+//	public Report generateReport(ReportData data, String type) {
+//
+//		Report generatedReport = null;
+//
+//		if (type.equals("JSON")) {
+//			generatedReport = new JSONReport();
+//		} else if (type.equals("XML")) {
+//			generatedReport = new XMLReport();
+//		} else if (type.equals("HTML")) {
+//			generatedReport = new HTMLReport();
+//		} else if (type.equals("PDF")) {
+//			generatedReport = new PDFReport();
+//		}
+//		if (generatedReport != null) {
+//			generatedReport.generateReport(data);
+//		}
+//
+//		return generatedReport;
+//	}
 }

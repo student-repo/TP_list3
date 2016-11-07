@@ -31,7 +31,7 @@ public class ReportGeneratorTest extends AbstractReportingTest{
 	public void testCreateJSONReport() {
 		ReportData reportData = createDummyReportData();
 		ReportGenerator generator = new ReportGenerator();
-		Report generatedReport = generator.generateReport(reportData, "JSON");
+		Report generatedReport = generator.generateReport(reportData, ReportGenerator.ReportType.JSON);
 		assertEquals("JSON Report. Name: "+reportData.getName(), generatedReport.getReportContent());
 	}
 	
@@ -40,7 +40,7 @@ public class ReportGeneratorTest extends AbstractReportingTest{
 	public void testCreateXMLReport() {
 		ReportData reportData = createDummyReportData();
 		ReportGenerator generator = new ReportGenerator();
-		Report generatedReport = generator.generateReport(reportData, "XML");
+		Report generatedReport = generator.generateReport(reportData, ReportGenerator.ReportType.XML);
 		assertEquals("XML Report. Name: "+reportData.getName(), generatedReport.getReportContent());
 	}
 	
@@ -48,7 +48,7 @@ public class ReportGeneratorTest extends AbstractReportingTest{
 	public void testCreateHTMLReport() {
 		ReportData reportData = createDummyReportData();
 		ReportGenerator generator = new ReportGenerator();
-		Report generatedReport = generator.generateReport(reportData, "HTML");
+		Report generatedReport = generator.generateReport(reportData, ReportGenerator.ReportType.HTML);
 		assertEquals("HTML Report. Name: "+reportData.getName(), generatedReport.getReportContent());
 	}
 	
@@ -56,7 +56,7 @@ public class ReportGeneratorTest extends AbstractReportingTest{
 	public void testCreatePDFReport() {
 		ReportData reportData = createDummyReportData();
 		ReportGenerator generator = new ReportGenerator();
-		Report generatedReport = generator.generateReport(reportData, "PDF");
+		Report generatedReport = generator.generateReport(reportData, ReportGenerator.ReportType.PDF);
 		assertEquals("PDF Report. Name: "+reportData.getName(), generatedReport.getReportContent());
 	}
 	

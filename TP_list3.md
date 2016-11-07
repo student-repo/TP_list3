@@ -170,6 +170,7 @@ SECOUND TEST PASSED
 
 		in CompositeShape
 
+
 		inside getLeafShapes return shapes;
 
 		-----------------
@@ -184,3 +185,42 @@ SECOUND TEST PASSED
 	a) b) c) d) paste the code from todos
 
  e) return ApplianceState.STARTED;
+
+
+7)
+
+- in ReportGenerator
+
+create
+
+public enum ReportType {
+		JSON, XML, HTML, PDF
+	}
+
+	comment generateReport
+
+	and add
+
+	public static Report generateReport(ReportData data, ReportType reportType) {
+		Report generatedReport;
+
+		switch (reportType) {
+			case JSON:
+				generatedReport = new JSONReport();
+				break;
+			case XML:
+				generatedReport = new XMLReport();
+				break;
+			case HTML:
+				generatedReport = new HTMLReport();
+				break;
+			case PDF:
+				generatedReport = new PDFReport();
+				break;
+			default: generatedReport = null;
+		}
+			generatedReport.generateReport(data);
+		return generatedReport;
+	}
+
+-check tests
