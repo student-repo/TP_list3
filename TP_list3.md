@@ -180,3 +180,7 @@ SECOUND TEST PASSED
 		-----------------
 		SIXTH TEST PASSED
 		-----------------
+6)
+	a) b) c) d) paste the code from todos
+
+ e) return ApplianceState.STARTED;
