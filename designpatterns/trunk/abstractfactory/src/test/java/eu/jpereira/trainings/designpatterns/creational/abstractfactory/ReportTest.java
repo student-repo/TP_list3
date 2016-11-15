@@ -31,20 +31,29 @@ public class ReportTest {
 	@Test
 	public void testCreateJSONReport() {
 
-		Report report = new Report("JSON");
-		assertEquals("JSON", report.getBody().getType());
-		assertEquals("JSON", report.getHeader().getType());
-		assertEquals("JSON", report.getFooter().getType());
+//		Report report = new Report("JSON");
+//		assertEquals("JSON", report.getBody().getType());
+//		assertEquals("JSON", report.getHeader().getType());
+//		assertEquals("JSON", report.getFooter().getType());
+		Report report = new Report();
+		assertEquals("JSON", report.getFactory("Body").getReportBody("JSON").getType());
+		assertEquals("JSON", report.getFactory("Header").getReportHeader("JSON").getType());
+		assertEquals("JSON", report.getFactory("Footer").getReportFooter("JSON").getType());
+
 
 	}
 
 	@Test
 	public void testCreateXMLReport() {
 
-		Report report = new Report("XML");
-		assertEquals("XML", report.getBody().getType());
-		assertEquals("XML", report.getHeader().getType());
-		assertEquals("XML", report.getFooter().getType());
+//		Report report = new Report("XML");
+//		assertEquals("XML", report.getBody().getType());
+//		assertEquals("XML", report.getHeader().getType());
+//		assertEquals("XML", report.getFooter().getType());
+		Report report = new Report();
+		assertEquals("XML", report.getFactory("Body").getReportBody("XML").getType());
+		assertEquals("XML", report.getFactory("Header").getReportHeader("XML").getType());
+		assertEquals("XML", report.getFactory("Footer").getReportFooter("XML").getType());
 
 	}
 

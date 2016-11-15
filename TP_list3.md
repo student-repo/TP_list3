@@ -224,3 +224,36 @@ public enum ReportType {
 	}
 
 -check tests
+
+8) 
+
+ 	Short introduction: 
+The abstract factory pattern provides a way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes. Most simply The abstract factory is an object that has multiple factory methods on it.
+
+With the Factory pattern, you produce implementations (Apple, Banana, Cherry, etc.) of a particular interface -- say, IFruit.
+
+With the Abstract Factory pattern, you produce implementations of a particular Factory interface -- e.g., IFruitFactory. Each of those knows how to create different kinds of fruit.
+
+https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
+
+
+ - right mouse clict to eu.jpereira.trainings... -> Diagram -> show Diagram
+
+ there is everything clear
+
+- create AbstractFactiry, ReportBodyFactory, ReportHeaderFactory and ReportFooterFactory -> look source code
+
+- comment everything in class Report and add method
+
+ public static AbstractFactory getFactory(String choice){
+		switch(choice){
+			case "Body": return new ReportBodyFactory();
+			case "Header": return new ReportHeaderFactory();
+			case "Footer": return new ReportFooterFactory();
+			default: return null;
+		}
+	}
+
+- change tests -> look source code
+
+

@@ -26,17 +26,21 @@ joaomiguel.pereira@gmail.com
 
 737e350e-228b-7272-34ae-3263785c5075
 
-xml
-dir
+AbstractFactory.java
+file
+0
+
+
+add
 
-ReportHeader.java
+Report.java
 file
 
 
 
 
 2016-02-13T19:56:37.329819Z
-22f1b7d880df71f1fd877566d12099f2
+94e349ea22dcd54b34bcedb121bbd034
 2011-10-11T00:46:07.204528Z
 19
 joaomiguel.pereira@gmail.com
@@ -61,44 +65,7 @@ joaomiguel.pereira@gmail.com
 
 
 
-774
-
-ReportElement.java
-file
-
-
-
-
-2016-02-13T19:56:37.329819Z
-ee9c19c7bcff847b57e935e56524ba5d
-2011-10-11T00:46:07.204528Z
-19
-joaomiguel.pereira@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-773
-
-json
-dir
+2397
 
 ReportBody.java
 file
@@ -134,6 +101,47 @@ joaomiguel.pereira@gmail.com
 
 772
 
+ReportBodyFactory.java
+file
+0
+
+
+add
+
+ReportElement.java
+file
+
+
+
+
+2016-02-13T19:56:37.329819Z
+ee9c19c7bcff847b57e935e56524ba5d
+2011-10-11T00:46:07.204528Z
+19
+joaomiguel.pereira@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+773
+
 ReportFooter.java
 file
 
@@ -168,14 +176,21 @@ joaomiguel.pereira@gmail.com
 
 774
 
-Report.java
+ReportFooterFactory.java
+file
+0
+
+
+add
+
+ReportHeader.java
 file
 
 
 
 
 2016-02-13T19:56:37.329819Z
-94e349ea22dcd54b34bcedb121bbd034
+22f1b7d880df71f1fd877566d12099f2
 2011-10-11T00:46:07.204528Z
 19
 joaomiguel.pereira@gmail.com
@@ -200,5 +215,18 @@ joaomiguel.pereira@gmail.com
 
 
 
-2397
+774
+
+ReportHeaderFactory.java
+file
+0
+
+
+add
+
+json
+dir
+
+xml
+dir
 
