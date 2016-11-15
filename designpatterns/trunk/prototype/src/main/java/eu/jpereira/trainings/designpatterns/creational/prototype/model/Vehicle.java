@@ -69,10 +69,20 @@ public class Vehicle implements Cloneable {
 	}
 
 	@Override
-	public Object clone() throws CloneNotSupportedException {
+	public Vehicle clone() {
 		//TODO: Implement clone
-		return super.clone();
+		Vehicle vehicleCopy = null;
+		try {
+			vehicleCopy = (Vehicle)super.clone();
+			return vehicleCopy;
+		}
+		catch (CloneNotSupportedException e){
+			e.printStackTrace();
+		}
+		return vehicleCopy;
+
 	}
+
 	
 	
 

@@ -70,6 +70,17 @@ public class SimpleVehicleBuilderTest {
 		
 	}
 
+	@Test
+	public void testCloneMethod() throws NeedToPackLastVehicleException, VehicleDoesNotHavePartsException, CouldNotCloneLastObjectException, CannotHaveZeroPartsException {
+		SimpleVehicleBuilder builder = new SimpleVehicleBuilder();
+		Vehicle vehicle = builder.createVehicle().with(new Tire()).times(10).with(new Window()).times(2).with(new Shell()).packIt();
+		Vehicle vehicleCopy = vehicle.clone();
+		assertEquals(false, vehicle == vehicleCopy);
+		assertEquals(13, vehicle.countParts());
+		assertEquals(13, vehicleCopy.countParts());
+
+	}
+
 
 
 }

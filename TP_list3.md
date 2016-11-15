@@ -293,3 +293,10 @@ implement placeOrder method and simple 5 set methods for the rest required metho
  - run tests
 
  - run jmeter and jconsole and see difference 
+
+
+11) PART I (prototype)
+
+ - in Vehicle class implement clone method
+
+ - write test in SimpleVehicleBuilderTest (testCloneMethod)
