@@ -24,8 +24,11 @@ public class Book {
 	/**
 	 * @param string
 	 */
-	public Book(String string) {
+
+	public String isbn;
+	public Book(String book) {
 		// TODO Auto-generated constructor stub
+		isbn = book;
 	}
 
 }

@@ -19,6 +19,7 @@ package eu.jpereira.trainings.designpatterns.structural.facade.model;
  * @author jpereira
  *
  */
-public class Order {
 
+public class Order {
 }
+

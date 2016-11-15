@@ -257,3 +257,26 @@ https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
 - change tests -> look source code
 
 
+
+9)
+
+	Short introduction:
+
+Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system. This type of design pattern comes under structural pattern as this pattern adds an interface to existing system to hide its complexities.
+
+more -> https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+
+
+ - add to BookStoreFacade 5 methods: setCustomerService, setWarehouseService, setBookService, setBookService and setNotificationService
+
+ - create DefaultBookstoreFacade create all neseccary objects CustomerDBService... 
+
+implement placeOrder method and simple 5 set methods for the rest required methods
+
+- inside Book add filed String isbn
+
+ - inside Customer add Constructoe and field customerId
+
+ - inside BookStoreFacadeTest create function createFacade
+
+ - all test should be passed

@@ -24,8 +24,10 @@ public class Customer {
 	/**
 	 * @param string
 	 */
-	public Customer(String string) {
+	public String customerId;
+	public Customer(String customerId) {
 		// TODO Auto-generated constructor stub
+		customerId = customerId;
 	}
 
 }
