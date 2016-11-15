@@ -280,3 +280,16 @@ implement placeOrder method and simple 5 set methods for the rest required metho
  - inside BookStoreFacadeTest create function createFacade
 
  - all test should be passed
+
+
+10)
+
+ - Download JMeter unzip and paste to project directory, go to JMeter/bin and do ./jmeter open there WorkBeanch.jmx and  select 1000 thread and do Ctrl + r in the same time do in terminal jconsole and watch
+
+ - in FakeWeatherService do TODO in readStationController method
+
+ - FakeWeatherStationControllerFactory uncomment method WeatherStationController
+
+ - run tests
+
+ - run jmeter and jconsole and see difference 
