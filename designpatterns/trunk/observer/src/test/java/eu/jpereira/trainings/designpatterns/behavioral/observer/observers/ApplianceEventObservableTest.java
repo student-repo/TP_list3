@@ -64,12 +64,12 @@ public class ApplianceEventObservableTest extends AbstractMapperTest {
 		
 		//TODO Exercise: Uncomment the following block
 		
-		/*
+
 		stateChangeMapper.addObserver(applianceStore);
 		stateChangeMapper.addObserver(applianceLogger);
 		alarmMapper.addObserver(applianceStore);
 		alarmMapper.addObserver(applianceLogger);
-		 */
+
 		
 		
 		//Add to chain
@@ -108,12 +108,12 @@ public class ApplianceEventObservableTest extends AbstractMapperTest {
 		
 		//Attach observers to observables
 		//TODO Exercise: Uncomment the following block of code
-		/*
+		
 		stateChangeMapper.addObserver(applianceStore);
 		stateChangeMapper.addObserver(applianceLogger);
 		alarmMapper.addObserver(applianceStore);
 		alarmMapper.addObserver(applianceLogger);
-		*/
+
 
 		
 		

@@ -300,3 +300,9 @@ implement placeOrder method and simple 5 set methods for the rest required metho
  - in Vehicle class implement clone method
 
  - write test in SimpleVehicleBuilderTest (testCloneMethod)
+
+
+11) Part II (observer)
+
+
+ - very simple -> look exercises and source code
